@@ -16,7 +16,7 @@ var orm = {
         });
     },
     updateOne: (inputs) => {
-        var queryString = `UPDATE burgers SET burger_name = ?, devoured = ? WHERE id = ?;`;
+        var queryString = `UPDATE burgers SET devoured = false WHERE id = ?;`;
         connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);

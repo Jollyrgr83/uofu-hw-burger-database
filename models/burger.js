@@ -13,9 +13,8 @@ var burger = {
             cb(res);
         });
     },
-    update: (name, status, id, cb) => {
-        var inputs = [name, status, id];
-        orm.updateOne(TABLE, inputs, (res) => {
+    update: (id, cb) => {
+        orm.updateOne(TABLE, id, (res) => {
             cb(res);
         });    
     }

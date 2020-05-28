@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
 });
 
 router.put("/", (req, res) => {
-    burger.update(req.body.name, "TRUE", req.body.id, (result) => {
+    burger.update(req.body.id, (result) => {
         if (result.changedRows === 0) {
             return res.status(404).end();
         }

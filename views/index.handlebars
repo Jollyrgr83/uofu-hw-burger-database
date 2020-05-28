@@ -13,20 +13,22 @@
             <ul>
                 {{#each burger}}
                     {{#unless devoured}}
+                        {{> burger-list devoured=false}}
                     {{/unless}}
                 {{/each}}
             </ul>
         </div>
         <!-- input area -->
         <div class="col-sm-4">
-            <input type="text" placeholder="Enter a burger you want to eat..." />
-            <button type="submit" class="btn btn-primary round">Submit</button> 
+            <input type="text" id="input" placeholder="Enter a burger you want to eat..." />
+            <button type="submit" id="submit" class="btn btn-primary round">Submit</button> 
         </div>
         <!-- list of burgers that have been eaten -->
         <div class="col-sm-4">
             <ul>
                 {{#each cats}}
                     {{#if devoured}}
+                        {{> burger-list devoured=true}}
                     {{/if}}
                 {{/each}}
             </ul>
