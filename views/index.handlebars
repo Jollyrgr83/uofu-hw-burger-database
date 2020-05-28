@@ -10,7 +10,12 @@
     <div class="row">
         <!-- list of burgers to eat -->
         <div class="col-sm-4">
-
+            <ul>
+                {{#each burger}}
+                    {{#unless devoured}}
+                    {{/unless}}
+                {{/each}}
+            </ul>
         </div>
         <!-- input area -->
         <div class="col-sm-4">
@@ -19,7 +24,12 @@
         </div>
         <!-- list of burgers that have been eaten -->
         <div class="col-sm-4">
-            
+            <ul>
+                {{#each cats}}
+                    {{#if devoured}}
+                    {{/if}}
+                {{/each}}
+            </ul>
         </div>
     </div>
 </div>
