@@ -8,16 +8,16 @@ var orm = {
             cb(result);
         });
     },
-    insertOne: (name, status) => {
+    insertOne: (inputs) => {
         var queryString = `INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);`;
-        connection.query(queryString, [name, status], (err, result) => {
+        connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);
         });
     },
-    updateOne: (name, status, id) => {
+    updateOne: (inputs) => {
         var queryString = `UPDATE burgers SET burger_name = ?, devoured = ? WHERE id = ?;`;
-        connection.query(queryString, [name, status, id], (err, result) => {
+        connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);
         });
