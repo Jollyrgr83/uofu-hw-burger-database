@@ -9,7 +9,7 @@ var orm = {
         });
     },
     insertOne: (inputs) => {
-        var queryString = `INSERT INTO burgers (burger_name, devoured) VALUES (?, ?);`;
+        var queryString = `INSERT INTO burgers (burger_name) VALUES (?);`;
         connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);

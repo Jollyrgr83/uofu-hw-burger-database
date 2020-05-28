@@ -8,9 +8,8 @@ var burger = {
             cb(res);
         });
     },
-    add: (name, status, cb) => {
-        var inputs = [name, status];
-        orm.insertOne(TABLE, inputs, (res) => {
+    add: (name, cb) => {
+        orm.insertOne(TABLE, [name], (res) => {
             cb(res);
         });
     },
