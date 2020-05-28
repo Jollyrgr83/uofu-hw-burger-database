@@ -1,21 +1,21 @@
 var connection = require("../config/connection.js");
 
 var orm = {
-    selectAll: () => {
-        var queryString = "SELECT * FROM burgers_db;";
+    selectAll: (cb) => {
+        var queryString = "SELECT * FROM burgers;";
         connection.query(queryString, (err, result) => {
             if (err) throw err;
             cb(result);
         });
     },
-    insertOne: (inputs) => {
+    insertOne: (inputs, cb) => {
         var queryString = `INSERT INTO burgers (burger_name) VALUES (?);`;
         connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);
         });
     },
-    updateOne: (inputs) => {
+    updateOne: (inputs, cb) => {
         var queryString = `UPDATE burgers SET devoured = false WHERE id = ?;`;
         connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
