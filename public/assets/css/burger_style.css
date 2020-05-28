@@ -1,0 +1,38 @@
+/* font-family: 'Lato', sans-serif; */
+/* font-family: 'Indie Flower', cursive; */
+/* font-family: 'Architects Daughter', cursive; */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+body {
+    background-color: slategray;
+}
+
+h1 {
+    color: whitesmoke;
+    font-family: "Indie Flower", cursive;
+    font-size: 42px;
+}
+
+.round {
+    border-radius: 40px;
+    width: 300px;
+    max-width: 100%;
+    margin: 2.5%;
+    padding: 1%;
+    color: whitesmoke;
+    background-color: steelblue;
+    font-family: "Indie Flower", cursive;
+    font-size: 22px;
+}
+.round:hover {
+    border-radius: 40px;
+    width: 300px;
+    max-width: 100%;
+    margin: 2.5%;
+    padding: 1%;
+    color: blue;
+    background-color: whitesmoke;
+    font-weight: bold;
+    border: solid 1px blue;
+}
