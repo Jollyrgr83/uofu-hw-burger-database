@@ -1,38 +1,144 @@
-/* font-family: 'Lato', sans-serif; */
-/* font-family: 'Indie Flower', cursive; */
-/* font-family: 'Architects Daughter', cursive; */
-/* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-
-body {
-    background-color: slategray;
+/* background color */
+.background {
+    background-color: rgb(229, 203, 122);
 }
-
-h1 {
-    color: whitesmoke;
-    font-family: "Indie Flower", cursive;
-    font-size: 42px;
-}
-
-.round {
-    border-radius: 40px;
-    width: 300px;
+/* burger image */
+.burger-img {
     max-width: 100%;
-    margin: 2.5%;
-    padding: 1%;
-    color: whitesmoke;
-    background-color: steelblue;
-    font-family: "Indie Flower", cursive;
-    font-size: 22px;
-}
-.round:hover {
-    border-radius: 40px;
     width: 300px;
+}
+/* titles and headings */
+.title {
+    color: blue;
+    font-family: "Indie Flower", cursive;
+    font-size: 72px;
+    margin: 5% 0 5% 0;
+}
+.sub-title {
+    font-family: "Architects Daughter", cursive;
+    font-size: 48px;
+    text-align: center;
+}
+.sub-title-eat {
+    color: rgb(50, 199, 4);
+}
+.sub-title-ate {
+    color: red;
+}
+/* list items */
+.item {
+    height: 60px;
+    border-radius: 40px;
+    width: 400px;
     max-width: 100%;
     margin: 2.5%;
     padding: 1%;
     color: blue;
-    background-color: whitesmoke;
+    background-color: rgb(229, 203, 122);
+    font-family: "Architects Daughter", cursive;
+    font-size: 28px;
+    text-align: center;
+}
+.eat {
+    border: solid 2px rgb(50, 199, 4);
+}
+.ate {
+    border: solid 2px red;
+}
+/* buttons */
+.button {
+    height: 60px;
+    border-radius: 40px;
+    max-width: 100%;
+    margin: 2.5%;
+    padding: 1%;
+    font-family: "Indie Flower", cursive;
+    font-size: 22px;
+}
+.submit {
+    width: 300px;
+    color: blue;
+    background-color: rgb(229, 203, 122);
+    border: solid 2px blue;
+}
+.submit:hover {
     font-weight: bold;
-    border: solid 1px blue;
+    color: whitesmoke;
+    background-color: blue;
+    border: solid 2px blue;
+}
+.devour {
+    width: 150px;
+    color: blue;
+    background-color: rgb(229, 203, 122);
+    border: solid 2px rgb(50, 199, 4);
+}
+.devour:hover {
+    font-weight: bold;
+    color: blue;
+    background-color: rgb(50, 199, 4);
+    border: solid 2px rgb(50, 199, 4);
+}
+.delete {
+    width: 150px;
+    color: blue;
+    background-color: rgb(229, 203, 122);
+    border: solid 2px red;
+}
+.delete:hover {
+    font-weight: bold;
+    color: blue;
+    background-color: red;
+    border: solid 2px red;
+}
+/* text input */
+/* input {
+    height: 60px;
+    width: 300px;
+    max-width: 100%;
+    font-family: "Lato", sans-serif !important;
+    font-size: 22px !important;
+    border-radius: 40px;
+    margin: 2.5%;
+    padding: 1%;
+    text-align: center;
+    border: solid 2px blue;
+} */
+input:enabled {
+    height: 60px;
+    width: 300px;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    border-radius: 40px;
+    margin: 2.5%;
+    padding: 1%;
+    text-align: center;
+    border: solid 2px blue;
+}
+input:focus {
+    height: 60px;
+    width: 300px;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    border-radius: 40px;
+    margin: 2.5%;
+    padding: 1%;
+    text-align: center;
+    border: solid 2px blue;
+    outline: none;
+}
+input:active {
+    height: 60px;
+    width: 300px;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    border-radius: 40px;
+    margin: 2.5%;
+    padding: 1%;
+    text-align: center;
+    border: solid 2px blue;
+    outline: none;
 }

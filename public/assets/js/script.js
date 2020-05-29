@@ -1,13 +1,13 @@
 $(() => {
     $(".devour").on("click", (event) => {
-        var id = $(this).data("id");
-
+        var id = $(event.target).data("id");
+        console.log("devour button id: ", id);
         var body = {
             id: id
         };
 
         // sends PUT request
-        $.ajax("/", {
+        $.ajax("/api/", {
             type: "PUT",
             data: body
         }).then(() => {
@@ -27,7 +27,7 @@ $(() => {
       };
   
       // sends POST request
-      $.ajax("/", {
+      $.ajax("/api/", {
         type: "POST",
         data: body
       }).then(() => {

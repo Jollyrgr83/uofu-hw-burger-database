@@ -8,19 +8,21 @@ router.get("/", (req, res) => {
         var hbsObject = {
             burgers: data
         };
-    console.log(hbsObject);
+    console.log("hbsObject", hbsObject);
     res.render("index", hbsObject);
     });
 });
 
-router.post("/", (req, res) => {
+router.post("/api/", (req, res) => {
     burger.add(req.body.name, (result) => {
         res.json({ id: result.insertId });
     });
 });
 
-router.put("/", (req, res) => {
-    burger.update(req.body.id, (result) => {
+router.put("/api/", function(req, res) {
+    console.log("Received PUT req.body", req.body);
+    burger.update(req.body.id, function(result) {
+        console.log("PUT result", result);
         if (result.changedRows === 0) {
             return res.status(404).end();
         }
