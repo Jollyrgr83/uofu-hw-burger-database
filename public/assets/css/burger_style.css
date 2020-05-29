@@ -99,32 +99,7 @@
     border: solid 2px red;
 }
 /* text input */
-input:enabled {
-    height: 60px;
-    width: 300px;
-    max-width: 100%;
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    border-radius: 40px;
-    margin: 2.5%;
-    padding: 1%;
-    text-align: center;
-    border: solid 2px blue;
-}
-input:focus {
-    height: 60px;
-    width: 300px;
-    max-width: 100%;
-    font-family: "Lato", sans-serif;
-    font-size: 16px;
-    border-radius: 40px;
-    margin: 2.5%;
-    padding: 1%;
-    text-align: center;
-    border: solid 2px blue;
-    outline: none;
-}
-input:active {
+input:enabled, input:focus, input:active {
     height: 60px;
     width: 300px;
     max-width: 100%;
