@@ -26,6 +26,10 @@ $(() => {
         name: $("#input").val().trim()
       };
   
+      if (body.name === "") {
+          return;
+      }
+
       // sends POST request
       $.ajax("/api/", {
         type: "POST",

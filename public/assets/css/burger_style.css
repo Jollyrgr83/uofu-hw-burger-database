@@ -67,6 +67,13 @@
     background-color: blue;
     border: solid 2px blue;
 }
+.submit:focus {
+    font-weight: bold;
+    color: whitesmoke;
+    background-color: blue;
+    border: solid 2px blue;
+    outline: none;
+}
 .devour {
     width: 150px;
     color: blue;
@@ -92,18 +99,6 @@
     border: solid 2px red;
 }
 /* text input */
-/* input {
-    height: 60px;
-    width: 300px;
-    max-width: 100%;
-    font-family: "Lato", sans-serif !important;
-    font-size: 22px !important;
-    border-radius: 40px;
-    margin: 2.5%;
-    padding: 1%;
-    text-align: center;
-    border: solid 2px blue;
-} */
 input:enabled {
     height: 60px;
     width: 300px;
