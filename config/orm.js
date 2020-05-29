@@ -15,8 +15,15 @@ var orm = {
             cb(result);
         });
     },
-    updateOne: function(inputs, cb) {
+    updateOne: (inputs, cb) => {
         var queryString = `UPDATE burgers SET devoured = true WHERE id = ?;`;
+        connection.query(queryString, inputs, (err, result) => {
+            if (err) throw err;
+            cb(result);
+        });
+    },
+    deleteOne: (inputs, cb) => {
+        var queryString = `DELETE FROM burgers WHERE id = ?`;
         connection.query(queryString, inputs, (err, result) => {
             if (err) throw err;
             cb(result);

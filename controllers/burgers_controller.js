@@ -8,7 +8,6 @@ router.get("/", (req, res) => {
         var hbsObject = {
             burgers: data
         };
-    console.log("hbsObject", hbsObject);
     res.render("index", hbsObject);
     });
 });
@@ -19,11 +18,22 @@ router.post("/api/", (req, res) => {
     });
 });
 
-router.put("/api/", function(req, res) {
-    console.log("Received PUT req.body", req.body);
-    burger.update(req.body.id, function(result) {
-        console.log("PUT result", result);
+router.put("/api/", (req, res) => {
+    burger.update(req.body.id, (result) => {
         if (result.changedRows === 0) {
+            return res.status(404).end();
+        }
+        else {
+            res.status(200).end();
+        }
+    });
+});
+
+router.delete("/api/", (req, res) => {
+    console.log("req.body", req.body);
+    burger.delete(req.body.id, (result) => {
+        console.log("result", result);
+        if (result.affectedRows === 0) {
             return res.status(404).end();
         }
         else {

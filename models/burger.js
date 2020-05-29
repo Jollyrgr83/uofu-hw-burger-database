@@ -11,10 +11,15 @@ var burger = {
             cb(res);
         });
     },
-    update: function(id, cb) {
+    update: (id, cb) => {
         orm.updateOne([id], (res) => {
             cb(res);
         });    
+    },
+    delete: (id, cb) => {
+        orm.deleteOne([id], (res) => {
+            cb(res);
+        });
     }
 };
 
