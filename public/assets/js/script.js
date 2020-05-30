@@ -32,24 +32,24 @@ $(() => {
             location.reload();
         });
     });
-    $("#submit").on("click", (event) => {
-      // prevents default submit event
-      event.preventDefault();
-      var body = {
-        name: $("#input").val().trim()
-      };
-      if (body.name === "") {
-          return;
-      }
-      // sends POST request
-      $.ajax("/api/", {
-        type: "POST",
-        data: body
-      }).then(() => {
-          console.log("Added new burger: ", body.name);
-          // reload page to update lists
-          location.reload();
+    $("#form").submit((event) => {
+        // prevents default submit event
+        event.preventDefault();
+        var body = {
+          name: $("#input").val().trim()
+        };
+        if (body.name === "") {
+            return;
         }
-      );
-    });
+        // sends POST request
+        $.ajax("/api/", {
+          type: "POST",
+          data: body
+        }).then(() => {
+            console.log("Added new burger: ", body.name);
+            // reload page to update lists
+            location.reload();
+          }
+        );
+      });
 });
