@@ -5,7 +5,7 @@
 /* burger image */
 .burger-img {
     max-width: 100%;
-    width: 300px;
+    width: 200px;
 }
 /* titles and headings */
 .title {
@@ -20,7 +20,7 @@
     text-align: center;
 }
 .sub-title-eat {
-    color: rgb(50, 199, 4);
+    color: green;
 }
 .sub-title-ate {
     color: red;
@@ -40,7 +40,7 @@
     text-align: center;
 }
 .eat {
-    border: solid 2px rgb(50, 199, 4);
+    border: solid 2px green;
 }
 .ate {
     border: solid 2px red;
@@ -78,13 +78,13 @@
     width: 150px;
     color: blue;
     background-color: rgb(229, 203, 122);
-    border: solid 2px rgb(50, 199, 4);
+    border: solid 2px green;
 }
 .devour:hover {
     font-weight: bold;
     color: blue;
-    background-color: rgb(50, 199, 4);
-    border: solid 2px rgb(50, 199, 4);
+    background-color: green;
+    border: solid 2px green;
 }
 .delete {
     width: 150px;
