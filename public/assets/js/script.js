@@ -8,7 +8,6 @@ $(() => {
             type: "PUT",
             data: body
         }).then(() => {
-            console.log("Updated devoured status of: ", id);
                 // reload page to update lists
                 location.reload();
             }
@@ -23,7 +22,6 @@ $(() => {
             type: "DELETE",
             data: body
         }).then(() => {
-            console.log("Deleted: ", id);
             // reload page to update lists
             location.reload();
         });
@@ -42,7 +40,6 @@ $(() => {
           type: "POST",
           data: body
         }).then(() => {
-            console.log("Added new burger: ", body.name);
             // reload page to update lists
             location.reload();
           }
