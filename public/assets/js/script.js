@@ -1,9 +1,7 @@
 $(() => {
     $(".devour").on("click", (event) => {
-        var id = $(event.target).data("id");
-        console.log("devour button id: ", id);
         var body = {
-            id: id
+            id: $(event.target).data("id")
         };
         // sends PUT request
         $.ajax("/api/", {
@@ -17,10 +15,8 @@ $(() => {
         );
     });
     $(".delete").on("click", (event) => {
-        var id = $(event.target).data("id");
-        console.log("delete button id: ", id);
         var body = {
-            id: id
+            id: $(event.target).data("id")
         };
         // sends DELETE request
         $.ajax("/api/", {
