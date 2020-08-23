@@ -3,7 +3,7 @@
 
 [Repo Link](https://github.com/Jollyrgr83/burger.git)
 
-[Live Link](https://guarded-journey-29239.herokuapp.com/)
+[Live Link](https://uofu-homework-burger.herokuapp.com/)
 
 [Portfolio Link](https://Jollyrgr83.github.io/portfolio-new/)
 
